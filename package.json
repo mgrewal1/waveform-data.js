@@ -19,6 +19,19 @@
       "pattern": "waveform-data.js/lib/"
     }
   },
+  "testling": {
+    "files": "test/unit/*.js",
+    "harness": "mocha-bdd",
+    "browsers": [
+      "ie/9..10",
+      "ff/latest..nightly",
+      "chrome/latest..canary",
+      "opera/latest..next",
+      "safari/latest",
+      "ipad/latest",
+      "android/latest"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/bbcrd/waveform-data.js.git"
@@ -54,6 +67,7 @@
     "browserify": "~2.34.0",
     "karma-safari-launcher": "~0.1.1",
     "blanket": "~1.1.5",
-    "karma-browserify": "0.0.5"
+    "karma-browserify": "0.0.5",
+    "testling": "~1.5.3"
   }
 }
